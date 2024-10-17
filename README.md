@@ -140,12 +140,12 @@ py download_media.py --input_filename <input_filename> --output_directory <outpu
 
 Pretty neat, right?
 
-# Tips
+## Tips
 
 The result will contain tweets ordered by its UNIX timestamp ascendingly. However, you can also order them by its `tweet_id` column.
 
 If you still insist on the UNIX timestamp, I recommend converting `tweet_unix_timestamp` by adding another column with the following formula (assuming its column is `D2`): `=D2/(24*60*60) + DATE(1970,1,1)`.
 
-# Notes
+## Notes
 
 If there's any error with the script or this README, let me know by opening an issue, or maybe just throw me a message at my Twitter profile!
