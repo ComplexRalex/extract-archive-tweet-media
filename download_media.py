@@ -127,10 +127,10 @@ def main():
         save_path = os.path.join(output_directory, filename)
 
         if download_file(media_url, save_path):
-            print(f"[{tweet_id}][{index}/{len(dataframe)}] Media {media_id} downloaded correctly: " + filename)
+            print(f"[{tweet_id}][{index + 1}/{len(dataframe)}] Media {media_id} downloaded correctly: " + filename)
             successful_downloads += 1
         else:
-            print(f"[{tweet_id}][{index}/{len(dataframe)}] Couldn't download {media_id}...")
+            print(f"[{tweet_id}][{index + 1}/{len(dataframe)}] Couldn't download {media_id}...")
 
     print(f"Process finished. (number of media files extracted: {successful_downloads}). Check out your files at {output_directory}!")
 
